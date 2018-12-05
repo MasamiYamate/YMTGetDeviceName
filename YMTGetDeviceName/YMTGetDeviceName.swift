@@ -57,7 +57,7 @@ import UIKit
         "iPhone10,5"  :"iPhone 8 Plus",             // iPhone 8 Plus A1897
         "iPhone10,3"  :"iPhone X",                  // iPhone X A1865,A1902
         "iPhone10,6"  :"iPhone X",                  // iPhone X A1901
-        "iPhone11,8"  :"iPhone XR",                 // iPhone XR ModelNo Unknown
+        "iPhone11,8"  :"iPhone XR",                 // iPhone XR A1984,A2105,A2106,A2108
         "iPhone11,2"  :"iPhone XS",                 // iPhone XS A2097,A2098
         "iPhone11,4"  :"iPhone XS Max",             // iPhone XS Max A1921,A2103
         "iPhone11,6"  :"iPhone XS Max",             // iPhone XS Max A2104
