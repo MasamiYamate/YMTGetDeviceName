@@ -101,7 +101,7 @@ import UIKit
         "iPad7,3"   :"iPad Pro 10.5inch",           // iPad Pro 10.5inch A1701 WiFi
         "iPad7,4"   :"iPad Pro 10.5inch",           // iPad Pro 10.5inch A1709 Cellular
         "iPad7,5"   :"iPad 6th",                    // iPad 6th Generation WiFi
-        "iPad7,6"   :"iPad 6th"                     // iPad 6th Generation Cellular
+        "iPad7,6"   :"iPad 6th",                    // iPad 6th Generation Cellular
         "iPad8,1"   :"iPad Pro 11inch WiFi",        // iPad Pro 11inch WiFi
         "iPad8,2"   :"iPad Pro 11inch WiFi",        // iPad Pro 11inch WiFi
         "iPad8,3"   :"iPad Pro 11inch Cell",        // iPad Pro 11inch Cellular
@@ -110,9 +110,9 @@ import UIKit
         "iPad8,6"   :"iPad Pro 12.9inch WiFi",      // iPad Pro 12.9inch WiFi
         "iPad8,7"   :"iPad Pro 12.9inch Cell",      // iPad Pro 12.9inch Cellular
         "iPad8,8"   :"iPad Pro 12.9inch Cell",      // iPad Pro 12.9inch Cellular
-        "iPad11,1"  :"iPad Mini 5th WiFi"           // iPad mini 5th WiFi
-        "iPad11,2"  :"iPad Mini 5th Cell"           // iPad mini 5th Cellular
-        "iPad11,3"  :"iPad Air 3rd WiFi"            // iPad Air 3rd generation WiFi
+        "iPad11,1"  :"iPad Mini 5th WiFi",          // iPad mini 5th WiFi
+        "iPad11,2"  :"iPad Mini 5th Cell",          // iPad mini 5th Cellular
+        "iPad11,3"  :"iPad Air 3rd WiFi",           // iPad Air 3rd generation WiFi
         "iPad11,4"  :"iPad Air 3rd Cell"            // iPad Air 3rd generation Cellular
     ]
 
