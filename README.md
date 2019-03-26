@@ -37,7 +37,7 @@ NSLog(@"%@" , [[YMTGetDeviceName share] getDeviceName]);
 
 ## Q&A
 ### What is the range of supported devices?
-Supports iOS devices up to September 21, 2018 (JST)
+Supports iOS devices up to March 26, 2019 (JST)
 
 ### Error 「dyld: Library not loaded image not found」
 Import from 「Embedded Binaries」
