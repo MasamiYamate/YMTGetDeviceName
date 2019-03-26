@@ -7,7 +7,7 @@
 #
 Pod::Spec.new do |s|
 s.name         = "YMTGetDeviceName"
-s.version      = "1.0.0"
+s.version      = "1.1"
 s.summary      = "Get device name from model number"
 s.license      = { :type => "MIT", :file => "LICENSE" }
 s.homepage     = "https://github.com/MasamiYamate/YMTGetDeviceName.git"
