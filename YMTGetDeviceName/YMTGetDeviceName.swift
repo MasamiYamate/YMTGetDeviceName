@@ -107,6 +107,8 @@ import UIKit
         "iPad7,4"   :"iPad Pro 10.5inch",           // iPad Pro 10.5inch A1709 Cellular
         "iPad7,5"   :"iPad 6th",                    // iPad 6th Generation WiFi
         "iPad7,6"   :"iPad 6th",                    // iPad 6th Generation Cellular
+        "iPad7,11"  :"iPad 7th",                    // iPad 7th Generation WiFi
+        "iPad7,12"  :"iPad 7th",                    // iPad 7th Generation Cellular
         "iPad8,1"   :"iPad Pro 11inch WiFi",        // iPad Pro 11inch WiFi
         "iPad8,2"   :"iPad Pro 11inch WiFi",        // iPad Pro 11inch WiFi
         "iPad8,3"   :"iPad Pro 11inch Cell",        // iPad Pro 11inch Cellular
