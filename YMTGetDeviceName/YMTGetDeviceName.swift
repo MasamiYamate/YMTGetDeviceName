@@ -28,6 +28,8 @@ import UIKit
         "iPod4,1"   :"iPod Touch 4th",            // iPod Touch 4th Generation
         "iPod5,1"   :"iPod Touch 5th",            // iPod Touch 5th Generation
         "iPod7,1"   :"iPod Touch 6th",            // iPod Touch 6th Generation
+        "iPod9,1"   :"iPod Touch 7th",            // iPod Touch 7th Generation
+        
         /* iPhone */
         "iPhone1,1"   :"iPhone 2G",                 // iPhone 2G
         "iPhone1,2"   :"iPhone 3G",                 // iPhone 3G
@@ -46,7 +48,7 @@ import UIKit
         "iPhone7,2"   :"iPhone 6",                  // iPhone 6
         "iPhone8,1"   :"iPhone 6S",                 // iPhone 6S
         "iPhone8,2"   :"iPhone 6S Plus",            // iPhone 6S Plus
-        "iPhone8,4"   :"iPhone SE" ,                // iPhone SE
+        "iPhone8,4"   :"iPhone SE",                 // iPhone SE
         "iPhone9,1"   :"iPhone 7",                  // iPhone 7 A1660,A1779,A1780
         "iPhone9,3"   :"iPhone 7",                  // iPhone 7 A1778
         "iPhone9,2"   :"iPhone 7 Plus",             // iPhone 7 Plus A1661,A1785,A1786
@@ -63,7 +65,8 @@ import UIKit
         "iPhone11,6"  :"iPhone XS Max",             // iPhone XS Max A2104
         "iPhone12,1"  :"iPhone 11",                 // iPhone 11
         "iPhone12,3"  :"iPhone 11 Pro",             // iPhone 11 Pro
-        "iPhone12,5"  :"iPhone 11 Pro Max",         // iPhon 11 Pro Max
+        "iPhone12,5"  :"iPhone 11 Pro Max",         // iPhone 11 Pro Max
+        "iPhone12,8"  :"iPhone SE 2nd",             // iPhone SE 2nd Generation
         
         /* iPad */
         "iPad1,1"   :"iPad 1 ",                     // iPad 1
@@ -101,8 +104,6 @@ import UIKit
         "iPad6,12"  :"iPad 5th Cell",               // iPad 5th Generation Cellular
         "iPad7,1"   :"iPad Pro 12.9inch 2nd WiFi",  // iPad Pro 12.9inch 2nd Generation WiFi
         "iPad7,2"   :"iPad Pro 12.9inch 2nd",       // iPad Pro 12.9inch 2nd Generation Cellular
-        "iPad7,11"  :"iPad Pro 10.2inch 7th WiFi",  // iPad Pro 10.2inch 7th Generation WiFi
-        "iPad7,12"  :"iPad Pro 10.2inch 7th Cell",  // iPad Pro 10.2inch 7th Generation Cellular
         "iPad7,3"   :"iPad Pro 10.5inch",           // iPad Pro 10.5inch A1701 WiFi
         "iPad7,4"   :"iPad Pro 10.5inch",           // iPad Pro 10.5inch A1709 Cellular
         "iPad7,5"   :"iPad 6th",                    // iPad 6th Generation WiFi
