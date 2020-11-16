@@ -10,8 +10,9 @@
 
     //Share instance
     public static let share: YMTGetDeviceName = YMTGetDeviceName()
-    
-    enum deviceCode: String {
+
+    /// Device codes
+    private enum deviceCode: String {
         // MARK: Simulator
         case i386
         case x86_64
@@ -30,6 +31,7 @@
         case iPod7_1 = "iPod7,1"
         /// iPod Touch 7th Generation
         case iPod9_1 = "iPod9,1"
+
         // MARK: iPhone
         /// iPhone 2G
         case iPhone1_1 = "iPhone1,1"
@@ -103,122 +105,243 @@
         case iPhone12_5 = "iPhone12,5"
         /// iPhone SE 2nd Generation
         case iPhone12_8 = "iPhone12,8"
+        /// iPhone 12 mini
+        case iPhone13_1 = "iPhone13,1"
+        /// iPhone 12
+        case iPhone13_2 = "iPhone13,2"
+        /// iPhone 12 Pro
+        case iPhone13_3 = "iPhone13,3"
+        /// iPhone 12 Pro Max
+        case iPhone13_4 = "iPhone13,4"
         
-        
- 
-        
-        
-        
+        // MARK: iPad
+        /// iPad 1
+        case iPad1_1 = "iPad1,1"
+        /// iPad 2
+        case iPad2_1 = "iPad2,1"
+        /// iPad2 GSM
+        case iPad2_2 = "iPad2,2"
+        /// iPad 2 CDMA (Cellular)
+        case iPad2_3 = "iPad2,3"
+        /// iPad 2 Mid2012
+        case iPad2_4 = "iPad2,4"
+        /// iPad Mini WiFi
+        case iPad2_5 = "iPad2,5"
+        /// iPad Mini GSM (Cellular)
+        case iPad2_6 = "iPad2,6"
+        /// iPad Mini Global (Cellular)
+        case iPad2_7 = "iPad2,7"
+        /// iPad 3 WiFi
+        case iPad3_1 = "iPad3,1"
+        /// iPad 3 CDMA (Cellular)
+        case iPad3_2 = "iPad3,2"
+        /// iPad 3 GSM (Cellular)
+        case iPad3_3 = "iPad3,3"
+        /// iPad 4 WiFi
+        case iPad3_4 = "iPad3,4"
+        /// iPad 4 GSM (Cellular)
+        case iPad3_5 = "iPad3,5"
+        /// iPad 4 Global (Cellular)
+        case iPad3_6 = "iPad3,6"
+        /// iPad Air WiFi
+        case iPad4_1 = "iPad4,1"
+        /// iPad Air Cellular
+        case iPad4_2 = "iPad4,2"
+        /// iPad Air ChinaModel
+        case iPad4_3 = "iPad4,3"
+        /// iPad mini 2 WiFi
+        case iPad4_4 = "iPad4,4"
+        /// iPad mini 2 Cellular
+        case iPad4_5 = "iPad4,5"
+        /// iPad mini 2 ChinaModel
+        case iPad4_6 = "iPad4,6"
+        /// iPad mini 3 WiFi
+        case iPad4_7 = "iPad4,7"
+        /// iPad mini 3 Cellular
+        case iPad4_8 = "iPad4,8"
+        /// iPad mini 3 ChinaModel
+        case iPad4_9 = "iPad4,9"
+        /// iPad Mini 4 WiFi
+        case iPad5_1 = "iPad5,1"
+        /// iPad Mini 4 Cellular
+        case iPad5_2 = "iPad5,2"
+        /// iPad Air 2 WiFi
+        case iPad5_3 = "iPad5,3"
+        /// iPad Air 2 Cellular
+        case iPad5_4 = "iPad5,4"
+        /// iPad Pro 9.7inch WiFi
+        case iPad6_3 = "iPad6,3"
+        /// iPad Pro 9.7inch Cellular
+        case iPad6_4 = "iPad6,4"
+        /// iPad Pro 12.9inch WiFi
+        case iPad6_7 = "iPad6,7"
+        /// iPad Pro 12.9inch Cellular
+        case iPad6_8 = "iPad6,8"
+        /// iPad 5th Generation WiFi
+        case iPad6_11 = "iPad6,11"
+        /// iPad 5th Generation Cellular
+        case iPad6_12 = "iPad6,12"
+        /// iPad Pro 12.9inch 2nd Generation WiFi
+        case iPad7_1 = "iPad7,1"
+        /// iPad Pro 12.9inch 2nd Generation Cellular
+        case iPad7_2 = "iPad7,2"
+        /// iPad Pro 10.5inch A1701 WiFi
+        case iPad7_3 = "iPad7,3"
+        /// iPad Pro 10.5inch A1709 Cellular
+        case iPad7_4 = "iPad7,4"
+        /// iPad 6th Generation WiFi
+        case iPad7_5 = "iPad7,5"
+        /// iPad 6th Generation Cellular
+        case iPad7_6 = "iPad7,6"
+        /// iPad 7th Generation WiFi
+        case iPad7_11 = "iPad7,11"
+        /// iPad 7th Generation Cellular
+        case iPad7_12 = "iPad7,12"
+        /// iPad Pro 11inch WiFi
+        case iPad8_1 = "iPad8,1"
+        /// iPad Pro 11inch WiFi
+        case iPad8_2 = "iPad8,2"
+        /// iPad Pro 11inch Cellular
+        case iPad8_3 = "iPad8,3"
+        /// iPad Pro 11inch Cellular
+        case iPad8_4 = "iPad8,4"
+        /// iPad Pro 12.9inch WiFi
+        case iPad8_5 = "iPad8,5"
+        /// iPad Pro 12.9inch WiFi
+        case iPad8_6 = "iPad8,6"
+        /// iPad Pro 12.9inch Cellular
+        case iPad8_7 = "iPad8,7"
+        /// iPad Pro 12.9inch Cellular
+        case iPad8_8 = "iPad8,8"
+        /// iPad Pro 11inch 2nd generation WiFi
+        case iPad8_9 = "iPad8,9"
+        /// iPad Pro 11inch 2nd generation Cellular
+        case iPad8_10 = "iPad8,10"
+        /// iPad Pro 12.9inch 4th generation WiFi
+        case iPad8_11 = "iPad8,11"
+        /// iPad Pro 12.9inch 4th generation Cellular
+        case iPad8_12 = "iPad8,12"
+        /// iPad mini 5th WiFi
+        case iPad11_1 = "iPad11,1"
+        /// iPad mini 5th Cellular
+        case iPad11_2 = "iPad11,2"
+        /// iPad Air 3rd generation WiFi
+        case iPad11_3 = "iPad11,3"
+        /// iPad Air 3rd generation Cellular
+        case iPad11_4 = "iPad11,4"
+        /// iPad 8th generation WiFi
+        case iPad11_6 = "iPad11,6"
+        /// iPad 8th generation Cellular
+        case iPad11_7 = "iPad11,7"
+        /// iPad Air 4th generation WiFi
+        case iPad13_1 = "iPad13,1"
+        /// iPad Air 4th generation Cellular
+        case iPad13_2 = "iPad13,2"
+
+        /// device name
+        func deviceName() -> String {
+            switch self {
+            case .i386, .x86_64:
+                return "Simulator"
+            case .iPod1_1:
+                return "iPod Touch 1st Generation"
+            case .iPod2_1:
+                return "iPod Touch 2nd Generation"
+            case .iPod3_1:
+                return "iPod Touch 3rd Generation"
+            case .iPod4_1:
+                return "iPod Touch 4th Generation"
+            case .iPod5_1:
+                return "iPod Touch 5th Generation"
+            case .iPod7_1:
+                return "iPod Touch 6th Generation"
+            case .iPod9_1:
+                return "iPod Touch 7th Generation"
+            case .iPhone1_1:
+                return "iPhone 2G"
+            case .iPhone1_2:
+                return "iPhone 3G"
+            case .iPhone2_1:
+                return "iPhone 3GS"
+            case .iPhone3_1, .iPhone3_2, .iPhone3_3:
+                return "iPhone4"
+            case .iPhone4_1:
+                return "iPhone 4S"
+            case .iPhone5_1, .iPhone5_2:
+                return "iPhone 5"
+            case .iPhone5_3, .iPhone5_4:
+                return "iPhone 5c"
+            case .iPhone6_1, .iPhone6_2:
+                return "iPhone 5s"
+            case .iPhone7_1:
+                return "iPhone 6 Plus"
+            case .iPhone7_2:
+                return "iPhone 6"
+            case .iPhone8_1:
+                return "iPhone 6s"
+            case .iPhone8_2:
+                return "iPhone 6s Plus"
+            case .iPhone8_4:
+                return "iPhone SE 1th Generation"
+            case .iPhone9_1, .iPhone9_3:
+                return "iPhone 7"
+            case .iPhone9_2, .iPhone9_4:
+                return "iPhone 7 Plus"
+            case .iPhone10_1, .iPhone10_4:
+                return "iPhone 8"
+            case .iPhone10_2, .iPhone10_5:
+                return "iPhone 8 Plus"
+            case .iPhone10_3, .iPhone10_6:
+                return "iPhone X"
+            case .iPhone11_8:
+                return "iPhone XR"
+            case .iPhone11_2:
+                return "iPhone XS"
+            case .iPhone11_4, .iPhone11_6:
+                return "iPhone XS Max"
+            case .iPhone12_1:
+                return "iPhone 11"
+            case .iPhone12_3:
+                return "iPhone 11 Pro"
+            case .iPhone12_5:
+                return "iPhone 11 Pro Max"
+            case .iPhone12_8:
+                return "iPhone SE 2nd Generation"
+            case .iPhone13_1:
+                return "iPhone 12 mini"
+            case .iPhone13_2:
+                return "iPhone 12"
+            case .iPhone13_3:
+                return "iPhone 12 Pro"
+            case .iPhone13_4:
+                return "iPhone 12 Pro Max"
+            case .iPad1_1:
+                return "iPad 1"
+            case .iPad2_1, .iPad2_4:
+                return "iPad 2 WiFi"
+            case .iPad2_2, .iPad2_3:
+                return "iPad 2 Cellular"
+            case .iPad2_5:
+                return "iPad mini 1th Generation WiFi"
+            case .iPad2_6, .iPad2_7:
+                return "iPad mini 1th Generation Cellular"
+            case .iPad3_1:
+                return "iPad 3 WiFi"
+            case .iPad3_2, .iPad3_3:
+                return "iPad 3 Cellular"
+            case .iPad3_4:
+                return "iPad 4 WiFi"
+            case .iPad3_5, .iPad3_6:
+                return "iPad 4 Cellular"
+            case .iPad4_1:
+                return "iPad Air 1th Generation WiFi"
+            case .iPad4_2, .iPad4_3:
+                return "iPad Air Generation Cellular"
+                
+            }
+        }
         
     }
-    
-    
-    private let deviceCodeDic: [String:String] = [
-//        /* Simulator */
-//        "i386"      :"Simulator",
-//        "x86_64"    :"Simulator",
-//        /* iPod */
-//        "iPod1,1"   :"iPod Touch 1st",            // iPod Touch 1st Generation
-//        "iPod2,1"   :"iPod Touch 2nd",            // iPod Touch 2nd Generation
-//        "iPod3,1"   :"iPod Touch 3rd",            // iPod Touch 3rd Generation
-//        "iPod4,1"   :"iPod Touch 4th",            // iPod Touch 4th Generation
-//        "iPod5,1"   :"iPod Touch 5th",            // iPod Touch 5th Generation
-//        "iPod7,1"   :"iPod Touch 6th",            // iPod Touch 6th Generation
-//        "iPod9,1"   :"iPod Touch 7th",            // iPod Touch 7th Generation
-//
-//        /* iPhone */
-//        "iPhone1,1"   :"iPhone 2G",                 // iPhone 2G
-//        "iPhone1,2"   :"iPhone 3G",                 // iPhone 3G
-//        "iPhone2,1"   :"iPhone 3GS",                // iPhone 3GS
-//        "iPhone3,1"   :"iPhone 4",                  // iPhone 4 GSM
-//        "iPhone3,2"   :"iPhone 4",                  // iPhone 4 GSM 2012
-//        "iPhone3,3"   :"iPhone 4",                  // iPhone 4 CDMA For Verizon,Sprint
-//        "iPhone4,1"   :"iPhone 4S",                 // iPhone 4S
-//        "iPhone5,1"   :"iPhone 5",                  // iPhone 5 GSM
-//        "iPhone5,2"   :"iPhone 5",                  // iPhone 5 Global
-//        "iPhone5,3"   :"iPhone 5c",                 // iPhone 5c GSM
-//        "iPhone5,4"   :"iPhone 5c",                 // iPhone 5c Global
-//        "iPhone6,1"   :"iPhone 5s",                 // iPhone 5s GSM
-//        "iPhone6,2"   :"iPhone 5s",                 // iPhone 5s Global
-//        "iPhone7,1"   :"iPhone 6 Plus",             // iPhone 6 Plus
-//        "iPhone7,2"   :"iPhone 6",                  // iPhone 6
-//        "iPhone8,1"   :"iPhone 6S",                 // iPhone 6S
-//        "iPhone8,2"   :"iPhone 6S Plus",            // iPhone 6S Plus
-//        "iPhone8,4"   :"iPhone SE",                 // iPhone SE
-//        "iPhone9,1"   :"iPhone 7",                  // iPhone 7 A1660,A1779,A1780
-//        "iPhone9,3"   :"iPhone 7",                  // iPhone 7 A1778
-//        "iPhone9,2"   :"iPhone 7 Plus",             // iPhone 7 Plus A1661,A1785,A1786
-//        "iPhone9,4"   :"iPhone 7 Plus",             // iPhone 7 Plus A1784
-//        "iPhone10,1"  :"iPhone 8",                  // iPhone 8 A1863,A1906,A1907
-//        "iPhone10,4"  :"iPhone 8",                  // iPhone 8 A1905
-//        "iPhone10,2"  :"iPhone 8 Plus",             // iPhone 8 Plus A1864,A1898,A1899
-//        "iPhone10,5"  :"iPhone 8 Plus",             // iPhone 8 Plus A1897
-//        "iPhone10,3"  :"iPhone X",                  // iPhone X A1865,A1902
-//        "iPhone10,6"  :"iPhone X",                  // iPhone X A1901
-//        "iPhone11,8"  :"iPhone XR",                 // iPhone XR A1984,A2105,A2106,A2108
-//        "iPhone11,2"  :"iPhone XS",                 // iPhone XS A2097,A2098
-//        "iPhone11,4"  :"iPhone XS Max",             // iPhone XS Max A1921,A2103
-//        "iPhone11,6"  :"iPhone XS Max",             // iPhone XS Max A2104
-//        "iPhone12,1"  :"iPhone 11",                 // iPhone 11
-//        "iPhone12,3"  :"iPhone 11 Pro",             // iPhone 11 Pro
-//        "iPhone12,5"  :"iPhone 11 Pro Max",         // iPhone 11 Pro Max
-//        "iPhone12,8"  :"iPhone SE 2nd",             // iPhone SE 2nd Generation
-        
-        /* iPad */
-        "iPad1,1"   :"iPad 1 ",                     // iPad 1
-        "iPad2,1"   :"iPad 2 WiFi",                 // iPad 2
-        "iPad2,2"   :"iPad 2 Cell",                 // iPad 2 GSM
-        "iPad2,3"   :"iPad 2 Cell",                 // iPad 2 CDMA (Cellular)
-        "iPad2,4"   :"iPad 2 WiFi",                 // iPad 2 Mid2012
-        "iPad2,5"   :"iPad Mini WiFi",              // iPad Mini WiFi
-        "iPad2,6"   :"iPad Mini Cell",              // iPad Mini GSM (Cellular)
-        "iPad2,7"   :"iPad Mini Cell",              // iPad Mini Global (Cellular)
-        "iPad3,1"   :"iPad 3 WiFi",                 // iPad 3 WiFi
-        "iPad3,2"   :"iPad 3 Cell",                 // iPad 3 CDMA (Cellular)
-        "iPad3,3"   :"iPad 3 Cell",                 // iPad 3 GSM (Cellular)
-        "iPad3,4"   :"iPad 4 WiFi",                 // iPad 4 WiFi
-        "iPad3,5"   :"iPad 4 Cell",                 // iPad 4 GSM (Cellular)
-        "iPad3,6"   :"iPad 4 Cell",                 // iPad 4 Global (Cellular)
-        "iPad4,1"   :"iPad Air WiFi",               // iPad Air WiFi
-        "iPad4,2"   :"iPad Air Cell",               // iPad Air Cellular
-        "iPad4,3"   :"iPad Air China",              // iPad Air ChinaModel
-        "iPad4,4"   :"iPad Mini 2 WiFi",            // iPad mini 2 WiFi
-        "iPad4,5"   :"iPad Mini 2 Cell",            // iPad mini 2 Cellular
-        "iPad4,6"   :"iPad Mini 2 China",           // iPad mini 2 ChinaModel
-        "iPad4,7"   :"iPad Mini 3 WiFi",            // iPad mini 3 WiFi
-        "iPad4,8"   :"iPad Mini 3 Cell",            // iPad mini 3 Cellular
-        "iPad4,9"   :"iPad Mini 3 China",           // iPad mini 3 ChinaModel
-        "iPad5,1"   :"iPad Mini 4 WiFi",            // iPad Mini 4 WiFi
-        "iPad5,2"   :"iPad Mini 4 Cell",            // iPad Mini 4 Cellular
-        "iPad5,3"   :"iPad Air 2 WiFi",             // iPad Air 2 WiFi
-        "iPad5,4"   :"iPad Air 2 Cell",             // iPad Air 2 Cellular
-        "iPad6,3"   :"iPad Pro 9.7inch WiFi",       // iPad Pro 9.7inch WiFi
-        "iPad6,4"   :"iPad Pro 9.7inch Cell",       // iPad Pro 9.7inch Cellular
-        "iPad6,7"   :"iPad Pro 12.9inch WiFi",      // iPad Pro 12.9inch WiFi
-        "iPad6,8"   :"iPad Pro 12.9inch Cell",      // iPad Pro 12.9inch Cellular
-        "iPad6,11"  :"iPad 5th WiFi",               // iPad 5th Generation WiFi
-        "iPad6,12"  :"iPad 5th Cell",               // iPad 5th Generation Cellular
-        "iPad7,1"   :"iPad Pro 12.9inch 2nd WiFi",  // iPad Pro 12.9inch 2nd Generation WiFi
-        "iPad7,2"   :"iPad Pro 12.9inch 2nd",       // iPad Pro 12.9inch 2nd Generation Cellular
-        "iPad7,3"   :"iPad Pro 10.5inch",           // iPad Pro 10.5inch A1701 WiFi
-        "iPad7,4"   :"iPad Pro 10.5inch",           // iPad Pro 10.5inch A1709 Cellular
-        "iPad7,5"   :"iPad 6th",                    // iPad 6th Generation WiFi
-        "iPad7,6"   :"iPad 6th",                    // iPad 6th Generation Cellular
-        "iPad7,11"  :"iPad 7th",                    // iPad 7th Generation WiFi
-        "iPad7,12"  :"iPad 7th",                    // iPad 7th Generation Cellular
-        "iPad8,1"   :"iPad Pro 11inch WiFi",        // iPad Pro 11inch WiFi
-        "iPad8,2"   :"iPad Pro 11inch WiFi",        // iPad Pro 11inch WiFi
-        "iPad8,3"   :"iPad Pro 11inch Cell",        // iPad Pro 11inch Cellular
-        "iPad8,4"   :"iPad Pro 11inch Cell",        // iPad Pro 11inch Cellular
-        "iPad8,5"   :"iPad Pro 12.9inch WiFi",      // iPad Pro 12.9inch WiFi
-        "iPad8,6"   :"iPad Pro 12.9inch WiFi",      // iPad Pro 12.9inch WiFi
-        "iPad8,7"   :"iPad Pro 12.9inch Cell",      // iPad Pro 12.9inch Cellular
-        "iPad8,8"   :"iPad Pro 12.9inch Cell",      // iPad Pro 12.9inch Cellular
-        "iPad11,1"  :"iPad Mini 5th WiFi",          // iPad mini 5th WiFi
-        "iPad11,2"  :"iPad Mini 5th Cell",          // iPad mini 5th Cellular
-        "iPad11,3"  :"iPad Air 3rd WiFi",           // iPad Air 3rd generation WiFi
-        "iPad11,4"  :"iPad Air 3rd Cell"            // iPad Air 3rd generation Cellular
-    ]
 
     /// Get device name from model number
     ///
