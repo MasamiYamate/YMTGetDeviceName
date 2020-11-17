@@ -5,14 +5,15 @@
 //  Created by MasamiYamate on 2018/09/19.
 //  Copyright © 2018年 MasamiYamate. All rights reserved.
 //
+import Foundation
 
-@objcMembers open class YMTGetDeviceName {
+open class YMTGetDeviceName {
 
     //Share instance
     public static let share: YMTGetDeviceName = YMTGetDeviceName()
 
     /// Device codes
-    private enum deviceCode: String {
+    enum DeviceCode: String {
         // MARK: Simulator
         case i386
         case x86_64
@@ -337,37 +338,116 @@
                 return "iPad Air 1th Generation WiFi"
             case .iPad4_2, .iPad4_3:
                 return "iPad Air Generation Cellular"
-                
+            case .iPad4_4:
+                return "iPad mini 2 WiFi"
+            case .iPad4_5, .iPad4_6:
+                return "iPad mini 2 Cellular"
+            case .iPad4_7:
+                return "iPad mini 3 WiFi"
+            case .iPad4_8, .iPad4_9:
+                return "iPad mini 3 Cellular"
+            case .iPad5_1:
+                return "iPad mini 4 WiFi"
+            case .iPad5_2:
+                return "iPad mini 4 Cellular"
+            case .iPad5_3:
+                return "iPad Air 2 WiFi"
+            case .iPad5_4:
+                return "iPad Air 2 Cellular"
+            case .iPad6_3:
+                return "iPad Pro 9.7inch WiFi"
+            case .iPad6_4:
+                return "iPad Pro 9.7inch Cellular"
+            case .iPad6_7:
+                return "iPad Pro 12.9inch WiFi"
+            case .iPad6_8:
+                return "iPad Pro 12.9inch WiFi"
+            case .iPad6_11:
+                return "iPad 5th Generation WiFi"
+            case .iPad6_12:
+                return "iPad 5th Generation Cellular"
+            case .iPad7_1:
+                return "iPad Pro 12.9inch 2nd Generation WiFi"
+            case .iPad7_2:
+                return "iPad Pro 12.9inch 2nd Generation Cellular"
+            case .iPad7_3:
+                return "iPad Pro 10.5inch WiFi"
+            case .iPad7_4:
+                return "iPad Pro 10.5inch Cellular"
+            case .iPad7_5:
+                return "iPad 6th Generation WiFi"
+            case .iPad7_6:
+                return "iPad 6th Generation Cellular"
+            case .iPad7_11:
+                return "iPad 7th Generation WiFi"
+            case .iPad7_12:
+                return "iPad 7th Generation Cellular"
+            case .iPad8_1, .iPad8_2:
+                return "iPad Pro 11inch WiFi"
+            case .iPad8_3, .iPad8_4:
+                return "iPad Pro 11inch Cellular"
+            case .iPad8_5, .iPad8_6:
+                return "iPad Pro 12.9inch 3rd Generation WiFi"
+            case .iPad8_7, .iPad8_8:
+                return "iPad Pro 12.9inch 3rd Generation Cellular"
+            case .iPad8_9:
+                return "iPad Pro 11inch 2nd Generation WiFi"
+            case .iPad8_10:
+                return "iPad Pro 11inch 2nd Generation Cellular"
+            case .iPad8_11:
+                return "iPad Pro 12.9inch 4th Generation WiFi"
+            case .iPad8_12:
+                return "iPad Pro 12.9inch 4th Generation Cellular"
+            case .iPad11_1:
+                return "iPad mini 5th Generation WiFi"
+            case .iPad11_2:
+                return "iPad mini 5th Generation Cellular"
+            case .iPad11_3:
+                return "iPad Air 3rd Generation WiFi"
+            case .iPad11_4:
+                return "iPad Air 3rd Generation Cellular"
+            case .iPad11_6:
+                return "iPad 8th Generation WiFi"
+            case .iPad11_7:
+                return "iPad 8th Generation Cellular"
+            case .iPad13_1:
+                return "iPad Air 4th Generation WiFi"
+            case .iPad13_2:
+                return "iPad Air 4th Generation Cellular"
             }
         }
-        
     }
 
     /// Get device name from model number
     ///
     /// - Returns: Device name (iPhone X , iPhoneXS ... etc)
-    @objc open func getDeviceName () -> String {
-        var size : Int = 0
+    open func getDeviceName () -> String {
+        var size: Int = 0
         sysctlbyname("hw.machine", nil, &size, nil, 0)
         var machine = [CChar](repeating: 0, count: Int(size))
         sysctlbyname("hw.machine", &machine, &size, nil, 0)
-        let code:String = String(cString:machine)
-        
+        let code: String = String(cString:machine)
     
+        guard let deviceCode = DeviceCode(rawValue: code) else {
+            return otherDeviceType(with: code)
+        }
 
-        if let deviceName = deviceCodeDic[code] {
-            return deviceName
-        }else{
-            if code.range(of: "iPod") != nil {
-                return "iPod Touch"
-            }else if code.range(of: "iPad") != nil {
-                return "iPad"
-            }else if code.range(of: "iPhone") != nil {
-                return "iPhone"
-            }else{
-                return "unknownDevice"
-            }
+        return deviceCode.deviceName()
+    }
+
+    /// Return only unsupported model types
+    /// - Parameter rawCode: device code
+    /// - Returns: device type name
+    private func otherDeviceType(with rawCode: String) -> String {
+        if rawCode.range(of: "iPod") != nil {
+            return "iPad Touch (unknown)"
+        } else if rawCode.range(of: "iPad") != nil {
+            return "iPad (unknown)"
+        } else if rawCode.range(of: "iPhone") != nil {
+            return "iPhone (unknown)"
+        } else {
+            return "Unknown device"
         }
     }
-    
+
 }
