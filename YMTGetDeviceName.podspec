@@ -16,5 +16,5 @@ s.source       = { :git => "https://github.com/MasamiYamate/YMTGetDeviceName.git
 s.platform     = :ios, "12.0"
 s.requires_arc = true
 s.source_files = 'YMTGetDeviceName/**/*.{swift}'
-s.swift_versions = ['5.3.1']
+s.swift_versions = ['5.0']
 end
