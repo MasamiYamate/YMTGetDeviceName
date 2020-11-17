@@ -30,18 +30,9 @@ import YMTGetDeviceName
 print(YMTGetDeviceName.share.getDeviceName())
 ```
 
-#### ・Objective-C
-```ViewController.m
-NSLog(@"%@" , [[YMTGetDeviceName share] getDeviceName]);
-```
-
 ## Q&A
 ### What is the range of supported devices?
 Supports iOS devices up to Aprill 22, 2020 (JST)
 
 ### Error 「dyld: Library not loaded image not found」
 Import from 「Embedded Binaries」
-
-### In case of Objective-C project
-Build Setting → Build Options → Always Embed Swift Standard Libraries
-Set to 「YES」

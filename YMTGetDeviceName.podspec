@@ -7,14 +7,14 @@
 #
 Pod::Spec.new do |s|
 s.name         = "YMTGetDeviceName"
-s.version      = "4.1"
+s.version      = "5.1"
 s.summary      = "Get device name from model number"
 s.license      = { :type => "MIT", :file => "LICENSE" }
 s.homepage     = "https://github.com/MasamiYamate/YMTGetDeviceName.git"
 s.author       = { "MasamiYamate" => "yamate.inquiry@mail.yamatte.net" }
 s.source       = { :git => "https://github.com/MasamiYamate/YMTGetDeviceName.git", :tag => "#{s.version}" }
-s.platform     = :ios, "8.0"
+s.platform     = :ios, "12.0"
 s.requires_arc = true
 s.source_files = 'YMTGetDeviceName/**/*.{swift}'
-s.swift_versions = ['5.0', '5.1', '5.1.1', '5.1.2', '5.1.3', '5.2']
+s.swift_versions = ['5.0']
 end
