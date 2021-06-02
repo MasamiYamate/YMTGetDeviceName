@@ -21,13 +21,11 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		D0B041432151ECEB001EB53D /* YMTGetDeviceName.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B041412151ECEB001EB53D /* YMTGetDeviceName.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0B0414A2151ED4B001EB53D /* YMTGetDeviceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B041492151ED4B001EB53D /* YMTGetDeviceName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D0B0413E2151ECEB001EB53D /* YMTGetDeviceName.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YMTGetDeviceName.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0B041412151ECEB001EB53D /* YMTGetDeviceName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMTGetDeviceName.h; sourceTree = "<group>"; };
 		D0B041422151ECEB001EB53D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0B041492151ED4B001EB53D /* YMTGetDeviceName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMTGetDeviceName.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +60,6 @@
 		D0B041402151ECEB001EB53D /* YMTGetDeviceName */ = {
 			isa = PBXGroup;
 			children = (
-				D0B041412151ECEB001EB53D /* YMTGetDeviceName.h */,
 				D0B041422151ECEB001EB53D /* Info.plist */,
 				D0B041492151ED4B001EB53D /* YMTGetDeviceName.swift */,
 			);
@@ -76,7 +73,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0B041432151ECEB001EB53D /* YMTGetDeviceName.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +312,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.1;
+				MARKETING_VERSION = 5.2;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = net.yamatte.YMTGetDeviceName;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -347,7 +343,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.1;
+				MARKETING_VERSION = 5.2;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = net.yamatte.YMTGetDeviceName;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
