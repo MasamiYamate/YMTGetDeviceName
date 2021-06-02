@@ -238,6 +238,22 @@ open class YMTGetDeviceName {
         case iPad13_1 = "iPad13,1"
         /// iPad Air 4th generation Cellular
         case iPad13_2 = "iPad13,2"
+        /// iPad Pro 11inch 3rd generation WiFi
+        case iPad13_4 = "iPad13,4"
+        /// iPad Pro 11inch 3rd generation WiFi
+        case iPad13_5 = "iPad13,5"
+        /// iPad Pro 11inch 3rd generation Cellular
+        case iPad13_6 = "iPad13,6"
+        /// iPad Pro 11inch 3rd generation Cellular
+        case iPad13_7 = "iPad13,7"
+        /// iPad Pro 12inch 5th generation WiFi
+        case iPad13_8 = "iPad13,8"
+        /// iPad Pro 12inch 5th generation WiFi
+        case iPad13_9 = "iPad13,9"
+        /// iPad Pro 12inch 5th generation Cellular
+        case iPad13_10 = "iPad13,10"
+        /// iPad Pro 12inch 5th generation Cellular
+        case iPad13_11 = "iPad13,11"
 
         /// device name
         func deviceName() -> String {
@@ -414,6 +430,14 @@ open class YMTGetDeviceName {
                 return "iPad Air 4th Generation WiFi"
             case .iPad13_2:
                 return "iPad Air 4th Generation Cellular"
+            case .iPad13_4, .iPad13_5:
+                return "iPad Pro 11inch 3rd Generation WiFi"
+            case .iPad13_6, .iPad13_7:
+                return "iPad Pro 11inch 3rd Generation Cellular"
+            case .iPad13_8, .iPad13_9:
+                return "iPad Pro 12.9inch 5th Generation WiFi"
+            case .iPad13_10, .iPad13_11:
+                return "iPad Pro 12.9inch 5th Generation Cellular"
             }
         }
     }
