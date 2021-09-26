@@ -28,5 +28,5 @@ print(YMTGetDeviceName.share.getDeviceName())
 
 ## Q&A
 ### What is the range of supported devices?
-Supports iOS devices up to June 02, 2021 (JST)
+Supports iOS devices up to September 26, 2021 (JST)
 
