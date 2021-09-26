@@ -312,7 +312,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.2;
+				MARKETING_VERSION = 5.3;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = net.yamatte.YMTGetDeviceName;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -343,7 +343,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.2;
+				MARKETING_VERSION = 5.3;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = net.yamatte.YMTGetDeviceName;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
