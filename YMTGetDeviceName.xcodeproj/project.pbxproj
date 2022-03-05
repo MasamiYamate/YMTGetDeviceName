@@ -7,25 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		948CF3BD27D391B5001C91E7 /* YMTGetDeviceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B041492151ED4B001EB53D /* YMTGetDeviceName.swift */; };
 		D0B0414A2151ED4B001EB53D /* YMTGetDeviceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B041492151ED4B001EB53D /* YMTGetDeviceName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		948CF3B627D391AB001C91E7 /* YMTGetDeviceName_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YMTGetDeviceName_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B0413E2151ECEB001EB53D /* YMTGetDeviceName.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YMTGetDeviceName.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B041422151ECEB001EB53D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0B041492151ED4B001EB53D /* YMTGetDeviceName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMTGetDeviceName.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		948CF3B327D391AB001C91E7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D0B0413A2151ECEB001EB53D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,7 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				D0B0413E2151ECEB001EB53D /* YMTGetDeviceName.framework */,
-				948CF3B627D391AB001C91E7 /* YMTGetDeviceName_iOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,13 +55,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		948CF3B127D391AB001C91E7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D0B0413B2151ECEB001EB53D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,24 +65,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		948CF3B527D391AB001C91E7 /* YMTGetDeviceName iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 948CF3BA27D391AB001C91E7 /* Build configuration list for PBXNativeTarget "YMTGetDeviceName iOS" */;
-			buildPhases = (
-				948CF3B127D391AB001C91E7 /* Headers */,
-				948CF3B227D391AB001C91E7 /* Sources */,
-				948CF3B327D391AB001C91E7 /* Frameworks */,
-				948CF3B427D391AB001C91E7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "YMTGetDeviceName iOS";
-			productName = "YMTGetDeviceName iOS";
-			productReference = 948CF3B627D391AB001C91E7 /* YMTGetDeviceName_iOS.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		D0B0413D2151ECEB001EB53D /* YMTGetDeviceName */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0B041462151ECEB001EB53D /* Build configuration list for PBXNativeTarget "YMTGetDeviceName" */;
@@ -127,9 +92,6 @@
 				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = MasamiYamate;
 				TargetAttributes = {
-					948CF3B527D391AB001C91E7 = {
-						CreatedOnToolsVersion = 13.2.1;
-					};
 					D0B0413D2151ECEB001EB53D = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 1020;
@@ -150,19 +112,11 @@
 			projectRoot = "";
 			targets = (
 				D0B0413D2151ECEB001EB53D /* YMTGetDeviceName */,
-				948CF3B527D391AB001C91E7 /* YMTGetDeviceName iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		948CF3B427D391AB001C91E7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D0B0413C2151ECEB001EB53D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,14 +127,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		948CF3B227D391AB001C91E7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				948CF3BD27D391B5001C91E7 /* YMTGetDeviceName.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D0B041392151ECEB001EB53D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,73 +138,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		948CF3BB27D391AB001C91E7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 94Z448EL6M;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = YMTGetDeviceName/Info.plist;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 MasamiYamate. All rights reserved.";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.yamatte.YMTGetDeviceName-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		948CF3BC27D391AB001C91E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 94Z448EL6M;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = YMTGetDeviceName/Info.plist;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 MasamiYamate. All rights reserved.";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.yamatte.YMTGetDeviceName-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		D0B041442151ECEB001EB53D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -445,15 +324,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		948CF3BA27D391AB001C91E7 /* Build configuration list for PBXNativeTarget "YMTGetDeviceName iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				948CF3BB27D391AB001C91E7 /* Debug */,
-				948CF3BC27D391AB001C91E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		D0B041382151ECEB001EB53D /* Build configuration list for PBXProject "YMTGetDeviceName" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
