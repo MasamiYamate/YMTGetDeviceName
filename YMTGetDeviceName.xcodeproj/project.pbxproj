@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		944A88742873567500BE6B5A /* YMTGetDeviceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944A88732873567500BE6B5A /* YMTGetDeviceName.swift */; };
+		944A88792873594F00BE6B5A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 944A88782873594F00BE6B5A /* README.md */; };
+		944A887B2873595500BE6B5A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 944A887A2873595500BE6B5A /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		944A88732873567500BE6B5A /* YMTGetDeviceName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YMTGetDeviceName.swift; path = Sources/YMTGetDeviceName/YMTGetDeviceName.swift; sourceTree = "<group>"; };
+		944A88782873594F00BE6B5A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		944A887A2873595500BE6B5A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		948CF3C427D39F34001C91E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0B0413E2151ECEB001EB53D /* YMTGetDeviceName.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YMTGetDeviceName.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -45,6 +49,8 @@
 		D0B041342151ECEB001EB53D = {
 			isa = PBXGroup;
 			children = (
+				944A887A2873595500BE6B5A /* LICENSE */,
+				944A88782873594F00BE6B5A /* README.md */,
 				944A88732873567500BE6B5A /* YMTGetDeviceName.swift */,
 				948CF3C227D39F34001C91E7 /* Resource */,
 				D0B0413F2151ECEB001EB53D /* Products */,
@@ -131,6 +137,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				944A887B2873595500BE6B5A /* LICENSE in Resources */,
+				944A88792873594F00BE6B5A /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +296,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.4;
+				MARKETING_VERSION = 5.4.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = net.yamatte.YMTGetDeviceName;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -319,7 +327,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.4;
+				MARKETING_VERSION = 5.4.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = net.yamatte.YMTGetDeviceName;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

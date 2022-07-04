@@ -7,10 +7,7 @@
 //
 import Foundation
 
-open class YMTGetDeviceName {
-
-    //Share instance
-    public static let share: YMTGetDeviceName = YMTGetDeviceName()
+public class YMTGetDeviceName {
 
     /// Device codes
     enum DeviceCode: String {
@@ -489,7 +486,7 @@ open class YMTGetDeviceName {
     /// Get device name from model number
     ///
     /// - Returns: Device name (iPhone X , iPhoneXS ... etc)
-    open func getDeviceName () -> String {
+    public static func getDeviceName () -> String {
         var size: Int = 0
         sysctlbyname("hw.machine", nil, &size, nil, 0)
         var machine = [CChar](repeating: 0, count: Int(size))
@@ -506,7 +503,7 @@ open class YMTGetDeviceName {
     /// Return only unsupported model types
     /// - Parameter rawCode: device code
     /// - Returns: device type name
-    private func otherDeviceType(with rawCode: String) -> String {
+    private static func otherDeviceType(with rawCode: String) -> String {
         if rawCode.range(of: "iPod") != nil {
             return "iPad Touch (unknown)"
         } else if rawCode.range(of: "iPad") != nil {
