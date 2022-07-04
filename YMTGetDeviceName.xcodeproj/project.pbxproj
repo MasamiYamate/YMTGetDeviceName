@@ -6,28 +6,18 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		D0B0414C2151F0FE001EB53D /* archive */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = D0B0414D2151F0FE001EB53D /* Build configuration list for PBXAggregateTarget "archive" */;
-			buildPhases = (
-				D0B041502151F106001EB53D /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = archive;
-			productName = archive;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		D0B0414A2151ED4B001EB53D /* YMTGetDeviceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B041492151ED4B001EB53D /* YMTGetDeviceName.swift */; };
+		944A88742873567500BE6B5A /* YMTGetDeviceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944A88732873567500BE6B5A /* YMTGetDeviceName.swift */; };
+		944A88792873594F00BE6B5A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 944A88782873594F00BE6B5A /* README.md */; };
+		944A887B2873595500BE6B5A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 944A887A2873595500BE6B5A /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		944A88732873567500BE6B5A /* YMTGetDeviceName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YMTGetDeviceName.swift; path = Sources/YMTGetDeviceName/YMTGetDeviceName.swift; sourceTree = "<group>"; };
+		944A88782873594F00BE6B5A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		944A887A2873595500BE6B5A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		948CF3C427D39F34001C91E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0B0413E2151ECEB001EB53D /* YMTGetDeviceName.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YMTGetDeviceName.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0B041422151ECEB001EB53D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0B041492151ED4B001EB53D /* YMTGetDeviceName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMTGetDeviceName.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,11 +31,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		948CF3C227D39F34001C91E7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				948CF3C427D39F34001C91E7 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		94FD672F27D3A34D0096FE18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D0B041342151ECEB001EB53D = {
 			isa = PBXGroup;
 			children = (
-				D0B041402151ECEB001EB53D /* YMTGetDeviceName */,
+				944A887A2873595500BE6B5A /* LICENSE */,
+				944A88782873594F00BE6B5A /* README.md */,
+				944A88732873567500BE6B5A /* YMTGetDeviceName.swift */,
+				948CF3C227D39F34001C91E7 /* Resource */,
 				D0B0413F2151ECEB001EB53D /* Products */,
+				94FD672F27D3A34D0096FE18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,15 +64,6 @@
 				D0B0413E2151ECEB001EB53D /* YMTGetDeviceName.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D0B041402151ECEB001EB53D /* YMTGetDeviceName */ = {
-			isa = PBXGroup;
-			children = (
-				D0B041422151ECEB001EB53D /* Info.plist */,
-				D0B041492151ED4B001EB53D /* YMTGetDeviceName.swift */,
-			);
-			path = YMTGetDeviceName;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +93,8 @@
 			dependencies = (
 			);
 			name = YMTGetDeviceName;
+			packageProductDependencies = (
+			);
 			productName = YMTGetDeviceName;
 			productReference = D0B0413E2151ECEB001EB53D /* YMTGetDeviceName.framework */;
 			productType = "com.apple.product-type.framework";
@@ -108,10 +110,7 @@
 				TargetAttributes = {
 					D0B0413D2151ECEB001EB53D = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1020;
-					};
-					D0B0414C2151F0FE001EB53D = {
-						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -129,7 +128,6 @@
 			projectRoot = "";
 			targets = (
 				D0B0413D2151ECEB001EB53D /* YMTGetDeviceName */,
-				D0B0414C2151F0FE001EB53D /* archive */,
 			);
 		};
 /* End PBXProject section */
@@ -139,33 +137,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				944A887B2873595500BE6B5A /* LICENSE in Resources */,
+				944A88792873594F00BE6B5A /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		D0B041502151F106001EB53D /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D0B041392151ECEB001EB53D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0B0414A2151ED4B001EB53D /* YMTGetDeviceName.swift in Sources */,
+				944A88742873567500BE6B5A /* YMTGetDeviceName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +288,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = YMTGetDeviceName/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resource/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,7 +296,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.3;
+				MARKETING_VERSION = 5.4.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = net.yamatte.YMTGetDeviceName;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -335,7 +319,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = YMTGetDeviceName/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resource/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -343,7 +327,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.3;
+				MARKETING_VERSION = 5.4.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = net.yamatte.YMTGetDeviceName;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -352,22 +336,6 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		D0B0414E2151F0FE001EB53D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		D0B0414F2151F0FE001EB53D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -388,15 +356,6 @@
 			buildConfigurations = (
 				D0B041472151ECEB001EB53D /* Debug */,
 				D0B041482151ECEB001EB53D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0B0414D2151F0FE001EB53D /* Build configuration list for PBXAggregateTarget "archive" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D0B0414E2151F0FE001EB53D /* Debug */,
-				D0B0414F2151F0FE001EB53D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

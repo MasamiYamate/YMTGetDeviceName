@@ -7,10 +7,7 @@
 //
 import Foundation
 
-open class YMTGetDeviceName {
-
-    //Share instance
-    public static let share: YMTGetDeviceName = YMTGetDeviceName()
+public class YMTGetDeviceName {
 
     /// Device codes
     enum DeviceCode: String {
@@ -122,6 +119,8 @@ open class YMTGetDeviceName {
         case iPhone14_2 = "iPhone14,2"
         /// iPhone13 Pro Max
         case iPhone14_3 = "iPhone14,3"
+        /// iPhone SE 3rd Generation
+        case iPhone14_6 = "iPhone14,6"
         
         // MARK: iPad
         /// iPad 1
@@ -270,6 +269,10 @@ open class YMTGetDeviceName {
         case iPad12_1 = "iPad12,1"
         /// iPad 9th generation Cellular
         case iPad12_2 = "iPad12,2"
+        /// iPad Air 5th generation WiFi
+        case iPad13_16 = "iPad13,16"
+        /// iPad Air 5th generation Cellular
+        case iPad13_17 = "iPad13,17"
         
         /// device name
         func deviceName() -> String {
@@ -470,6 +473,12 @@ open class YMTGetDeviceName {
                 return "iPad 9th generation WiFi"
             case .iPad12_2:
                 return "iPad 9th generation Cellular"
+            case .iPhone14_6:
+                return "iPhone SE 3rd Generation"
+            case .iPad13_16:
+                return "iPad Air 5th Generation WiFi"
+            case .iPad13_17:
+                return "iPad Air 5th Generation Cellular"
             }
         }
     }
@@ -477,7 +486,7 @@ open class YMTGetDeviceName {
     /// Get device name from model number
     ///
     /// - Returns: Device name (iPhone X , iPhoneXS ... etc)
-    open func getDeviceName () -> String {
+    public static func getDeviceName () -> String {
         var size: Int = 0
         sysctlbyname("hw.machine", nil, &size, nil, 0)
         var machine = [CChar](repeating: 0, count: Int(size))
@@ -494,7 +503,7 @@ open class YMTGetDeviceName {
     /// Return only unsupported model types
     /// - Parameter rawCode: device code
     /// - Returns: device type name
-    private func otherDeviceType(with rawCode: String) -> String {
+    private static func otherDeviceType(with rawCode: String) -> String {
         if rawCode.range(of: "iPod") != nil {
             return "iPad Touch (unknown)"
         } else if rawCode.range(of: "iPad") != nil {

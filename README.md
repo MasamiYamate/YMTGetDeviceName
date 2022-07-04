@@ -6,27 +6,49 @@ Standard UIDevice can only distinguish iPhone or iPad.
 This framework is get device name from model number.
 
 ## Installation
-Just add 「YMTGetDeviceName.framework」 foloder to your project.
-or
-Use CocoaPods with Podfile:
+### Use Swift Package Manager
+
+- File > Swift Packages > Add Package Dependency
+- Add https://github.com/MasamiYamate/YMTGetDeviceName
+- Select "Up to Next Major" with "5.4.0"
+
+### Use Carthage
+
+Add to Cartfile
+
+```
+github "MasamiYamate/YMTGetDeviceName" ~> 5.4.0
+```
+
+Execute the following command
+
+```
+carthage update --platform iOS --use-xcframeworks
+```
+
+
+### Use CocoaPods with Podfile:
+
+Add to Podfile
 
 ```
 pod 'YMTGetDeviceName'
 ```
+
+
+
 ## How to use
 ### Import
-#### ・Swift
 ```ViewController.swift
 import YMTGetDeviceName
 ```
 
 ### Get device name
-#### ・Swift
 ```ViewController.swift
-print(YMTGetDeviceName.share.getDeviceName())
+print(YMTGetDeviceName.getDeviceName())
 ```
 
 ## Q&A
 ### What is the range of supported devices?
-Supports iOS devices up to September 26, 2021 (JST)
+Supports iOS devices up to 2022/07/05 (JST)
 
