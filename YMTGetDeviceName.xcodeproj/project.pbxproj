@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		94FD673E27D3A8690096FE18 /* YMTGetDeviceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FD673D27D3A8690096FE18 /* YMTGetDeviceName.swift */; };
+		944A88742873567500BE6B5A /* YMTGetDeviceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944A88732873567500BE6B5A /* YMTGetDeviceName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		944A88732873567500BE6B5A /* YMTGetDeviceName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YMTGetDeviceName.swift; path = Sources/YMTGetDeviceName/YMTGetDeviceName.swift; sourceTree = "<group>"; };
 		948CF3C427D39F34001C91E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94FD673D27D3A8690096FE18 /* YMTGetDeviceName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = YMTGetDeviceName.swift; path = YMTGetDeviceName/Sources/YMTGetDeviceName/YMTGetDeviceName.swift; sourceTree = "<group>"; };
 		D0B0413E2151ECEB001EB53D /* YMTGetDeviceName.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YMTGetDeviceName.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -45,7 +45,7 @@
 		D0B041342151ECEB001EB53D = {
 			isa = PBXGroup;
 			children = (
-				94FD673D27D3A8690096FE18 /* YMTGetDeviceName.swift */,
+				944A88732873567500BE6B5A /* YMTGetDeviceName.swift */,
 				948CF3C227D39F34001C91E7 /* Resource */,
 				D0B0413F2151ECEB001EB53D /* Products */,
 				94FD672F27D3A34D0096FE18 /* Frameworks */,
@@ -104,7 +104,7 @@
 				TargetAttributes = {
 					D0B0413D2151ECEB001EB53D = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -141,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94FD673E27D3A8690096FE18 /* YMTGetDeviceName.swift in Sources */,
+				944A88742873567500BE6B5A /* YMTGetDeviceName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
