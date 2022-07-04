@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D0B0414A2151ED4B001EB53D /* YMTGetDeviceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B041492151ED4B001EB53D /* YMTGetDeviceName.swift */; };
+		94FD673E27D3A8690096FE18 /* YMTGetDeviceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FD673D27D3A8690096FE18 /* YMTGetDeviceName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		948CF3C427D39F34001C91E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94FD673D27D3A8690096FE18 /* YMTGetDeviceName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = YMTGetDeviceName.swift; path = YMTGetDeviceName/Sources/YMTGetDeviceName/YMTGetDeviceName.swift; sourceTree = "<group>"; };
 		D0B0413E2151ECEB001EB53D /* YMTGetDeviceName.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YMTGetDeviceName.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0B041422151ECEB001EB53D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0B041492151ED4B001EB53D /* YMTGetDeviceName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMTGetDeviceName.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,11 +27,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		948CF3C227D39F34001C91E7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				948CF3C427D39F34001C91E7 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		94FD672F27D3A34D0096FE18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D0B041342151ECEB001EB53D = {
 			isa = PBXGroup;
 			children = (
-				D0B041402151ECEB001EB53D /* YMTGetDeviceName */,
+				94FD673D27D3A8690096FE18 /* YMTGetDeviceName.swift */,
+				948CF3C227D39F34001C91E7 /* Resource */,
 				D0B0413F2151ECEB001EB53D /* Products */,
+				94FD672F27D3A34D0096FE18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,15 +58,6 @@
 				D0B0413E2151ECEB001EB53D /* YMTGetDeviceName.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D0B041402151ECEB001EB53D /* YMTGetDeviceName */ = {
-			isa = PBXGroup;
-			children = (
-				D0B041422151ECEB001EB53D /* Info.plist */,
-				D0B041492151ED4B001EB53D /* YMTGetDeviceName.swift */,
-			);
-			path = YMTGetDeviceName;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,6 +87,8 @@
 			dependencies = (
 			);
 			name = YMTGetDeviceName;
+			packageProductDependencies = (
+			);
 			productName = YMTGetDeviceName;
 			productReference = D0B0413E2151ECEB001EB53D /* YMTGetDeviceName.framework */;
 			productType = "com.apple.product-type.framework";
@@ -131,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0B0414A2151ED4B001EB53D /* YMTGetDeviceName.swift in Sources */,
+				94FD673E27D3A8690096FE18 /* YMTGetDeviceName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +280,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = YMTGetDeviceName/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resource/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -278,7 +288,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.3;
+				MARKETING_VERSION = 5.4;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = net.yamatte.YMTGetDeviceName;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -301,7 +311,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = YMTGetDeviceName/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resource/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,7 +319,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.3;
+				MARKETING_VERSION = 5.4;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = net.yamatte.YMTGetDeviceName;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
