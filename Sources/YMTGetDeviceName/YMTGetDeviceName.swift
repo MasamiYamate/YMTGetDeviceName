@@ -122,6 +122,8 @@ open class YMTGetDeviceName {
         case iPhone14_2 = "iPhone14,2"
         /// iPhone13 Pro Max
         case iPhone14_3 = "iPhone14,3"
+        /// iPhone SE 3rd Generation
+        case iPhone14_6 = "iPhone14,6"
         
         // MARK: iPad
         /// iPad 1
@@ -270,6 +272,10 @@ open class YMTGetDeviceName {
         case iPad12_1 = "iPad12,1"
         /// iPad 9th generation Cellular
         case iPad12_2 = "iPad12,2"
+        /// iPad Air 5th generation WiFi
+        case iPad13_16 = "iPad13,16"
+        /// iPad Air 5th generation Cellular
+        case iPad13_17 = "iPad13,17"
         
         /// device name
         func deviceName() -> String {
@@ -470,6 +476,12 @@ open class YMTGetDeviceName {
                 return "iPad 9th generation WiFi"
             case .iPad12_2:
                 return "iPad 9th generation Cellular"
+            case .iPhone14_6:
+                return "iPhone SE 3rd Generation"
+            case .iPad13_16:
+                return "iPad Air 5th Generation WiFi"
+            case .iPad13_17:
+                return "iPad Air 5th Generation Cellular"
             }
         }
     }
