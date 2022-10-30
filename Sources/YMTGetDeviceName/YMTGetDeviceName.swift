@@ -14,6 +14,7 @@ public class YMTGetDeviceName {
         // MARK: Simulator
         case i386
         case x86_64
+        case arm64
         // MARK: iPod
         /// iPod Touch 1st Generation
         case iPod1_1 = "iPod1,1"
@@ -121,7 +122,15 @@ public class YMTGetDeviceName {
         case iPhone14_3 = "iPhone14,3"
         /// iPhone SE 3rd Generation
         case iPhone14_6 = "iPhone14,6"
-        
+        /// iPhone 14
+        case iPhone14_7 = "iPhone14,7"
+        /// iPhone 14 Plus
+        case iPhone14_8 = "iPhone14,8"
+        /// iPhone 14 Pro
+        case iPhone15_2 = "iPhone15,2"
+        /// iPhone 14 Pro Max
+        case iPhone15_3 = "iPhone15,3"
+
         // MARK: iPad
         /// iPad 1
         case iPad1_1 = "iPad1,1"
@@ -273,11 +282,31 @@ public class YMTGetDeviceName {
         case iPad13_16 = "iPad13,16"
         /// iPad Air 5th generation Cellular
         case iPad13_17 = "iPad13,17"
-        
+        /// iPad 10th Gen
+        case iPad13_18 = "iPad13,18"
+        /// iPad 10th Gen
+        case iPad13_19 = "iPad13,19"
+        /// iPad Pro 11 inch 4th Gen
+        case iPad14_3_A = "iPad14,3-A"
+        /// iPad Pro 11 inch 4th Gen
+        case iPad14_3_B = "iPad14,3-B"
+        /// iPad Pro 11 inch 4th Gen
+        case iPad14_4_A = "iPad14,4-A"
+        /// iPad Pro 11 inch 4th Gen
+        case iPad14_4_B = "iPad14,4-B"
+        /// iPad Pro 12.9 inch 6th Gen
+        case iPad14_5_A = "iPad14,5-A"
+        /// iPad Pro 12.9 inch 6th Gen
+        case iPad14_5_B = "iPad14,5-B"
+        /// iPad Pro 12.9 inch 6th Gen
+        case iPad14_6_A = "iPad14,6-A"
+        /// iPad Pro 12.9 inch 6th Gen
+        case iPad14_6_B = "iPad14,6-B"
+
         /// device name
         func deviceName() -> String {
             switch self {
-            case .i386, .x86_64:
+            case .i386, .x86_64, .arm64:
                 return "Simulator"
             case .iPod1_1:
                 return "iPod Touch 1st Generation"
@@ -479,6 +508,34 @@ public class YMTGetDeviceName {
                 return "iPad Air 5th Generation WiFi"
             case .iPad13_17:
                 return "iPad Air 5th Generation Cellular"
+            case .iPhone14_7:
+                return "iPhone 14"
+            case .iPhone14_8:
+                return "iPhone 14 Plus"
+            case .iPhone15_2:
+                return "iPhone 14 Pro"
+            case .iPhone15_3:
+                return "iPhone 14 Pro Max"
+            case .iPad13_18:
+                return "iPad 10th Gen"
+            case .iPad13_19:
+                return "iPad 10th Gen"
+            case .iPad14_3_A:
+                return "iPad Pro 11 inch 4th Gen"
+            case .iPad14_3_B:
+                return "iPad Pro 11 inch 4th Gen"
+            case .iPad14_4_A:
+                return "iPad Pro 11 inch 4th Gen"
+            case .iPad14_4_B:
+                return "iPad Pro 11 inch 4th Gen"
+            case .iPad14_5_A:
+                return "iPad Pro 12.9 inch 6th Gen"
+            case .iPad14_5_B:
+                return "iPad Pro 12.9 inch 6th Gen"
+            case .iPad14_6_A:
+                return "iPad Pro 12.9 inch 6th Gen"
+            case .iPad14_6_B:
+                return "iPad Pro 12.9 inch 6th Gen"
             }
         }
     }
