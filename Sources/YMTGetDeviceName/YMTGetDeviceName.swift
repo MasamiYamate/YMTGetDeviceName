@@ -14,6 +14,7 @@ public class YMTGetDeviceName {
         // MARK: Simulator
         case i386
         case x86_64
+        case arm64
         // MARK: iPod
         /// iPod Touch 1st Generation
         case iPod1_1 = "iPod1,1"
@@ -277,7 +278,7 @@ public class YMTGetDeviceName {
         /// device name
         func deviceName() -> String {
             switch self {
-            case .i386, .x86_64:
+            case .i386, .x86_64, .arm64:
                 return "Simulator"
             case .iPod1_1:
                 return "iPod Touch 1st Generation"
