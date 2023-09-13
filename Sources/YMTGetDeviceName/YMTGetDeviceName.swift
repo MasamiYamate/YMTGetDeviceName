@@ -130,6 +130,14 @@ public class YMTGetDeviceName {
         case iPhone15_2 = "iPhone15,2"
         /// iPhone 14 Pro Max
         case iPhone15_3 = "iPhone15,3"
+        /// iPhone 15
+        case iPhone15_4 = "iPhone15,4"
+        /// iPhone 15 Plus
+        case iPhone15_5 = "iPhone15,5"
+        /// iPhone 15 Pro
+        case iPhone16_1 = "iPhone16,1"
+        /// iPhone 15 Pro Max
+        case iPhone16_2 = "iPhone16,2"
 
         // MARK: iPad
         /// iPad 1
@@ -536,6 +544,14 @@ public class YMTGetDeviceName {
                 return "iPad Pro 12.9 inch 6th Gen"
             case .iPad14_6_B:
                 return "iPad Pro 12.9 inch 6th Gen"
+            case .iPhone15_4:
+                return "iPhone 15"
+            case .iPhone15_5:
+                return "iPhone 15 Plus"
+            case .iPhone16_1:
+                return "iPhone 15 Pro"
+            case .iPhone16_2:
+                return "iPhone 15 Pro Max"
             }
         }
     }
