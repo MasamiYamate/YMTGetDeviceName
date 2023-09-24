@@ -578,7 +578,7 @@ public class YMTGetDeviceName {
     /// - Returns: device type name
     private static func otherDeviceType(with rawCode: String) -> String {
         if rawCode.range(of: "iPod") != nil {
-            return "iPad Touch (unknown)"
+            return "iPod Touch (unknown)"
         } else if rawCode.range(of: "iPad") != nil {
             return "iPad (unknown)"
         } else if rawCode.range(of: "iPhone") != nil {
