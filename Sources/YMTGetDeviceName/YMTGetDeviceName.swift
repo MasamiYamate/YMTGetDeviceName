@@ -15,6 +15,16 @@ public class YMTGetDeviceName {
         case i386
         case x86_64
         case arm64
+
+        // MARK: iOS Platform
+        // MARK: Mac on iOS App
+        /// Mac
+        case macFamily20_1 = "MacFamily20,1"
+
+        // MARK: Reality device on iOS App
+        /// Vision Pro
+        case realityFamily22_1 = "RealityFamily22,1"
+
         // MARK: iPod
         /// iPod Touch 1st Generation
         case iPod1_1 = "iPod1,1"
@@ -311,11 +321,130 @@ public class YMTGetDeviceName {
         /// iPad Pro 12.9 inch 6th Gen
         case iPad14_6_B = "iPad14,6-B"
 
+        // MARK: WatchOS Platform
+        /// Apple Watch (1st generation) 38mm
+        case watch1_1 = "Watch1,1"
+        /// Apple Watch (1st generation) 42mm
+        case watch1_2 = "Watch1,2"
+        /// Apple Watch Series 2 38mm
+        case watch2_3 = "Watch2,3"
+        /// Apple Watch Series 2 42mm
+        case watch2_4 = "Watch2,4"
+        /// Apple Watch Series 1 38mm
+        case watch2_6 = "Watch2,6"
+        /// Apple Watch Series 1 42mm
+        case watch2_7 = "Watch2,7"
+        /// Apple Watch Series 3 (GPS + Cellular) 38mm
+        case watch3_1 = "Watch3,1"
+        /// Apple Watch Series 3 (GPS + Cellular) 42mm
+        case watch3_2 = "Watch3,2"
+        /// Apple Watch Series 3 (GPS) 38mm
+        case watch3_3 = "Watch3,3"
+        /// Apple Watch Series 3 (GPS) 42mm
+        case watch3_4 = "Watch3,4"
+        /// Apple Watch Series 4
+        case watch4_1 = "Watch4,1"
+        /// Apple Watch Series 4
+        case watch4_2 = "Watch4,2"
+        /// Apple Watch Series 4
+        case watch4_3 = "Watch4,3"
+        /// Apple Watch Series 4
+        case watch4_4 = "Watch4,4"
+        /// Apple Watch Series 5
+        case watch5_1 = "Watch5,1"
+        /// Apple Watch Series 5
+        case watch5_2 = "Watch5,2"
+        /// Apple Watch Series 5
+        case watch5_3 = "Watch5,3"
+        /// Apple Watch Series 5
+        case watch5_4 = "Watch5,4"
+        /// Apple Watch SE (GPS)
+        case watch5_9 = "Watch5,9"
+        /// Apple Watch SE (GPS)
+        case watch5_10 = "Watch5,10"
+        /// Apple Watch SE (GPS + Cellular)
+        case watch5_11 = "Watch5,11"
+        /// Apple Watch SE (GPS + Cellular)
+        case watch5_12 = "Watch5,12"
+        /// Apple Watch Series 6 (GPS)
+        case watch6_1 = "Watch6,1"
+        /// Apple Watch Series 6 (GPS)
+        case watch6_2 = "Watch6,2"
+        /// Apple Watch Series 6 (GPS + Cellular)
+        case watch6_3 = "Watch6,3"
+        /// Apple Watch Series 6 (GPS + Cellular)
+        case watch6_4 = "Watch6,4"
+        /// Apple Watch Series 7 (GPS)
+        case watch6_6 = "Watch6,6"
+        /// Apple Watch Series 7 (GPS)
+        case watch6_7 = "Watch6,7"
+        /// Apple Watch Series 7 (GPS + Cellular)
+        case watch6_8 = "Watch6,8"
+        /// Apple Watch Series 7 (GPS + Cellular)
+        case watch6_9 = "Watch6,9"
+        /// Apple Watch SE (GPS)
+        case watch6_10 = "Watch6,10"
+        /// Apple Watch SE (GPS)
+        case watch6_11 = "Watch6,11"
+        /// Apple Watch SE (GPS + Cellular)
+        case watch6_12 = "Watch6,12"
+        /// Apple Watch SE (GPS + Cellular)
+        case watch6_13 = "Watch6,13"
+        /// Apple Watch Series 8 (GPS)
+        case watch6_14 = "Watch6,14"
+        /// Apple Watch Series 8 (GPS)
+        case watch6_15 = "Watch6,15"
+        /// Apple Watch Series 8 (GPS + Cellular)
+        case watch6_16 = "Watch6,16"
+        /// Apple Watch Series 8 (GPS + Cellular)
+        case watch6_17 = "Watch6,17"
+        /// Apple Watch Ultra
+        case watch6_18 = "Watch6,18"
+        /// Apple Watch Series 9 (GPS)
+        case watch7_1 = "Watch7,1"
+        /// Apple Watch Series 9 (GPS)
+        case watch7_2 = "Watch7,2"
+        /// Apple Watch Series 9 (GPS + Cellular)
+        case watch7_3 = "Watch7,3"
+        /// Apple Watch Series 9 (GPS + Cellular)
+        case watch7_4 = "Watch7,4"
+        /// Apple Watch Ultra 2
+        case watch7_5 = "Watch7,5"
+
+        // MARK: TVOS Platform
+        /// Apple TV 1st Generation
+        case appleTV1_1 = "AppleTV1,1"
+        /// Apple TV 2nd Generation
+        case appleTV2_1 = "AppleTV2,1"
+        /// Apple TV 3rd Generation (Early 2012)
+        case appleTV3_1 = "AppleTV3,1"
+        /// Apple TV 3rd Generation (Early 2013)
+        case appleTV3_2 = "AppleTV3,2"
+        /// Apple TV 4th Generation
+        case appleTV5_3 = "AppleTV5,3"
+        /// Apple TV 4K
+        case appleTV6_2 = "AppleTV6,2"
+        /// Apple TV 4K 2nd Generation
+        case appleTV11_1 = "AppleTV11,1"
+        /// Apple TV 4K 3rd Generation
+        case appleTV14_1 = "AppleTV14,1"
+
+        // MARK: XROS Platform
+        // MARK: Reality Device
+        case realityDevice14_1 = "RealityDevice14,1"
+
         /// device name
         func deviceName() -> String {
             switch self {
+            // MARK: Simulator
             case .i386, .x86_64, .arm64:
                 return "Simulator"
+
+            // MARK: iOS Platform
+            // MARK: Mac on iOS App
+            case .macFamily20_1:
+                return "Mac"
+            // MARK: iPod
             case .iPod1_1:
                 return "iPod Touch 1st Generation"
             case .iPod2_1:
@@ -330,6 +459,7 @@ public class YMTGetDeviceName {
                 return "iPod Touch 6th Generation"
             case .iPod9_1:
                 return "iPod Touch 7th Generation"
+            // MARK: iPhone
             case .iPhone1_1:
                 return "iPhone 2G"
             case .iPhone1_2:
@@ -388,6 +518,33 @@ public class YMTGetDeviceName {
                 return "iPhone 12 Pro"
             case .iPhone13_4:
                 return "iPhone 12 Pro Max"
+            case .iPhone14_2:
+                return "iPhone 13 Pro"
+            case .iPhone14_3:
+                return "iPhone 13 Pro Max"
+            case .iPhone14_4:
+                return "iPhone 13 mini"
+            case .iPhone14_5:
+                return "iPhone 13"
+            case .iPhone14_6:
+                return "iPhone SE 3rd Generation"
+            case .iPhone14_7:
+                return "iPhone 14"
+            case .iPhone14_8:
+                return "iPhone 14 Plus"
+            case .iPhone15_2:
+                return "iPhone 14 Pro"
+            case .iPhone15_3:
+                return "iPhone 14 Pro Max"
+            case .iPhone15_4:
+                return "iPhone 15"
+            case .iPhone15_5:
+                return "iPhone 15 Plus"
+            case .iPhone16_1:
+                return "iPhone 15 Pro"
+            case .iPhone16_2:
+                return "iPhone 15 Pro Max"
+            // MARK: iPad
             case .iPad1_1:
                 return "iPad 1"
             case .iPad2_1, .iPad2_4:
@@ -494,14 +651,6 @@ public class YMTGetDeviceName {
                 return "iPad Pro 12.9inch 5th Generation WiFi"
             case .iPad13_10, .iPad13_11:
                 return "iPad Pro 12.9inch 5th Generation Cellular"
-            case .iPhone14_4:
-                return "iPhone 13 mini"
-            case .iPhone14_5:
-                return "iPhone 13"
-            case .iPhone14_2:
-                return "iPhone 13 Pro"
-            case .iPhone14_3:
-                return "iPhone 13 Pro Max"
             case .iPad14_1:
                 return "iPad mini 6th Generation WiFi"
             case .iPad14_2:
@@ -510,20 +659,10 @@ public class YMTGetDeviceName {
                 return "iPad 9th generation WiFi"
             case .iPad12_2:
                 return "iPad 9th generation Cellular"
-            case .iPhone14_6:
-                return "iPhone SE 3rd Generation"
             case .iPad13_16:
                 return "iPad Air 5th Generation WiFi"
             case .iPad13_17:
                 return "iPad Air 5th Generation Cellular"
-            case .iPhone14_7:
-                return "iPhone 14"
-            case .iPhone14_8:
-                return "iPhone 14 Plus"
-            case .iPhone15_2:
-                return "iPhone 14 Pro"
-            case .iPhone15_3:
-                return "iPhone 14 Pro Max"
             case .iPad13_18:
                 return "iPad 10th Gen"
             case .iPad13_19:
@@ -544,14 +683,71 @@ public class YMTGetDeviceName {
                 return "iPad Pro 12.9 inch 6th Gen"
             case .iPad14_6_B:
                 return "iPad Pro 12.9 inch 6th Gen"
-            case .iPhone15_4:
-                return "iPhone 15"
-            case .iPhone15_5:
-                return "iPhone 15 Plus"
-            case .iPhone16_1:
-                return "iPhone 15 Pro"
-            case .iPhone16_2:
-                return "iPhone 15 Pro Max"
+
+            // MARK: WatchOS Platform
+            case .watch1_1:
+                return "Apple Watch (1st generation) 38mm"
+            case .watch1_2:
+                return "Apple Watch (1st generation) 42mm"
+            case .watch2_3:
+                return "Apple Watch Series 2 38mm"
+            case .watch2_4:
+                return "Apple Watch Series 2 42mm"
+            case .watch2_6:
+                return "Apple Watch Series 1 38mm"
+            case .watch2_7:
+                return "Apple Watch Series 1 42mm"
+            case .watch3_1:
+                return "Apple Watch Series 3 (GPS + Cellular) 38mm"
+            case .watch3_2:
+                return "Apple Watch Series 3 (GPS + Cellular) 42mm"
+            case .watch3_3:
+                return "Apple Watch Series 3 (GPS) 38mm"
+            case .watch3_4:
+                return "Apple Watch Series 3 (GPS) 42mm"
+            case .watch4_1, .watch4_2, .watch4_3, .watch4_4:
+                return "Apple Watch Series 4"
+            case .watch5_1, .watch5_2, .watch5_3, .watch5_4:
+                return "Apple Watch Series 5"
+            case .watch5_9, .watch5_10:
+                return "Apple Watch SE (GPS)"
+            case .watch5_11, .watch5_12:
+                return "Apple Watch SE (GPS + Cellular)"
+            case .watch6_1, .watch6_2:
+                return "Apple Watch Series 6 (GPS)"
+            case .watch6_3, .watch6_4:
+                return "Apple Watch Series 6 (GPS + Cellular)"
+            case .watch6_6, .watch6_7:
+                return "Apple Watch Series 7 (GPS)"
+            case .watch6_8, .watch6_9:
+                return "Apple Watch Series 7 (GPS + Cellular)"
+            case .watch6_10, .watch6_11:
+                return "Apple Watch SE (GPS)"
+            case .watch6_12, .watch6_13:
+                return "Apple Watch SE (GPS + Cellular)"
+            case .watch6_14, .watch6_15:
+                return "Apple Watch Series 8 (GPS)"
+            case .watch6_16, .watch6_17:
+                return "Apple Watch Series 8 (GPS + Cellular)"
+            case .watch6_18:
+                return "Apple Watch Ultra"
+            case .watch7_1, .watch7_2:
+                return "Apple Watch Series 9 (GPS)"
+            case .watch7_3, .watch7_4:
+                return "Apple Watch Series 9 (GPS + Cellular)"
+            case .watch7_5:
+                return "Apple Watch Ultra 2"
+
+            // MARK: TVOS Platform
+            case .appleTV1_1, .appleTV2_1, .appleTV3_1, .appleTV3_2, .appleTV5_3:
+                return "Apple TV"
+            case .appleTV6_2, .appleTV11_1, .appleTV14_1:
+                return "Apple TV 4K"
+
+            // MARK: XROS Platform
+            // MARK: Reality Device
+            case .realityFamily22_1, .realityDevice14_1:
+                return "Apple Vision Pro"
             }
         }
     }
@@ -583,6 +779,14 @@ public class YMTGetDeviceName {
             return "iPad (unknown)"
         } else if rawCode.range(of: "iPhone") != nil {
             return "iPhone (unknown)"
+        } else if rawCode.range(of: "Watch") != nil {
+            return "Apple Watch (unknown)"
+        } else if rawCode.range(of: "MacFamily") != nil {
+            return "Mac (unknown)"
+        } else if rawCode.range(of: "Reality") != nil {
+            return "Reality Device (unknown)"
+        } else if rawCode.range(of: "AppleTV") != nil {
+            return "AppleTV (unknown)"
         } else {
             return "Unknown device"
         }
