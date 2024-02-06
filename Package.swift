@@ -13,6 +13,8 @@ let package = Package(
     targets: [
         .target(
             name: "YMTGetDeviceName",
-            dependencies: []),
+            dependencies: [],
+            path: "Sources",
+            resources: [.copy("PrivacyInfo.xcprivacy")]),
     ]
 )
