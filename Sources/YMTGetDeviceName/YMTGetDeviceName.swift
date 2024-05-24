@@ -310,6 +310,22 @@ public class YMTGetDeviceName {
         case iPad14_6_A = "iPad14,6-A"
         /// iPad Pro 12.9 inch 6th Gen
         case iPad14_6_B = "iPad14,6-B"
+        /// iPad Air 11inch M2 WiFi
+        case iPad14_8 = "iPad14,8"
+        /// iPad Air 11inch M2 Cellular
+        case iPad14_9 = "iPad14,9"
+        /// iPad Air 13inch M2 WiFi
+        case iPad14_10 = "iPad14,10"
+        /// iPad Air 13inch M2 Cellular
+        case iPad14_11 = "iPad14,11"
+        /// iPad Pro 11inch M4 WiFi
+        case iPad16_3 = "iPad16,3"
+        /// iPad Pro 11inch M4 Cellular
+        case iPad16_4 = "iPad16,4"
+        /// iPad Pro 13inch M4 WiFi
+        case iPad16_5 = "iPad16,5"
+        /// iPad Pro 13inch M4 Cellular
+        case iPad16_6 = "iPad16,6"
 
         /// device name
         func deviceName() -> String {
@@ -552,6 +568,14 @@ public class YMTGetDeviceName {
                 return "iPhone 15 Pro"
             case .iPhone16_2:
                 return "iPhone 15 Pro Max"
+            case .iPad14_8, .iPad14_9:
+                return "iPad Air 11 inch M2"
+            case .iPad14_10, .iPad14_11:
+                return "iPad Air 13 inch M2"
+            case .iPad16_3, .iPad16_4:
+                return "iPad Pro 11 inch M4"
+            case .iPad16_5, .iPad16_6:
+                return "iPad Pro 13 inch M4"
             }
         }
     }
