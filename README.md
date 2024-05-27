@@ -10,14 +10,14 @@ This framework is get device name from model number.
 
 - File > Swift Packages > Add Package Dependency
 - Add https://github.com/MasamiYamate/YMTGetDeviceName
-- Select "Up to Next Major" with "5.6.1"
+- Select "Up to Next Major" with "5.6.2"
 
 ### Use Carthage
 
 Add to Cartfile
 
 ```
-github "MasamiYamate/YMTGetDeviceName" ~> 5.6.1
+github "MasamiYamate/YMTGetDeviceName" ~> 5.6.2
 ```
 
 Execute the following command
@@ -28,6 +28,9 @@ carthage update --platform iOS --use-xcframeworks
 
 
 ### Use CocoaPods with Podfile:
+
+This feature will be discontinued in the future.
+Use is not recommended.
 
 Add to Podfile
 
@@ -50,5 +53,5 @@ print(YMTGetDeviceName.getDeviceName())
 
 ## Q&A
 ### What is the range of supported devices?
-Supports iOS devices up to 2023/09/13 (JST)
+Supports iOS devices up to 2024/05/27 (JST)
 

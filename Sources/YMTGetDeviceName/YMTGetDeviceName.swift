@@ -295,21 +295,13 @@ public class YMTGetDeviceName {
         /// iPad 10th Gen
         case iPad13_19 = "iPad13,19"
         /// iPad Pro 11 inch 4th Gen
-        case iPad14_3_A = "iPad14,3-A"
+        case iPad14_3 = "iPad14,3"
         /// iPad Pro 11 inch 4th Gen
-        case iPad14_3_B = "iPad14,3-B"
-        /// iPad Pro 11 inch 4th Gen
-        case iPad14_4_A = "iPad14,4-A"
-        /// iPad Pro 11 inch 4th Gen
-        case iPad14_4_B = "iPad14,4-B"
+        case iPad14_4 = "iPad14,4"
         /// iPad Pro 12.9 inch 6th Gen
-        case iPad14_5_A = "iPad14,5-A"
+        case iPad14_5 = "iPad14,5"
         /// iPad Pro 12.9 inch 6th Gen
-        case iPad14_5_B = "iPad14,5-B"
-        /// iPad Pro 12.9 inch 6th Gen
-        case iPad14_6_A = "iPad14,6-A"
-        /// iPad Pro 12.9 inch 6th Gen
-        case iPad14_6_B = "iPad14,6-B"
+        case iPad14_6 = "iPad14,6"
         /// iPad Air 11inch M2 WiFi
         case iPad14_8 = "iPad14,8"
         /// iPad Air 11inch M2 Cellular
@@ -544,21 +536,13 @@ public class YMTGetDeviceName {
                 return "iPad 10th Gen"
             case .iPad13_19:
                 return "iPad 10th Gen"
-            case .iPad14_3_A:
+            case .iPad14_3:
                 return "iPad Pro 11 inch 4th Gen"
-            case .iPad14_3_B:
+            case .iPad14_4:
                 return "iPad Pro 11 inch 4th Gen"
-            case .iPad14_4_A:
-                return "iPad Pro 11 inch 4th Gen"
-            case .iPad14_4_B:
-                return "iPad Pro 11 inch 4th Gen"
-            case .iPad14_5_A:
+            case .iPad14_5:
                 return "iPad Pro 12.9 inch 6th Gen"
-            case .iPad14_5_B:
-                return "iPad Pro 12.9 inch 6th Gen"
-            case .iPad14_6_A:
-                return "iPad Pro 12.9 inch 6th Gen"
-            case .iPad14_6_B:
+            case .iPad14_6:
                 return "iPad Pro 12.9 inch 6th Gen"
             case .iPhone15_4:
                 return "iPhone 15"
