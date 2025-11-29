@@ -148,6 +148,14 @@ public class YMTGetDeviceName {
         case iPhone17_4 = "iPhone17,4"
         /// iPhone 16e
         case iPhone17_5 = "iPhone17,5"
+        /// iPhone 17
+        case iPhone18_3 = "iPhone18,3"
+        /// iPhone 17 Pro
+        case iPhone18_1 = "iPhone18,1"
+        /// iPhone 17 Pro Max
+        case iPhone18_2 = "iPhone18,2"
+        /// iPhone 17 Air
+        case iPhone18_4 = "iPhone18,4"
 
         // MARK: iPad
         /// iPad 1
@@ -328,6 +336,22 @@ public class YMTGetDeviceName {
         case iPad16_5 = "iPad16,5"
         /// iPad Pro 13inch M4 Cellular
         case iPad16_6 = "iPad16,6"
+        /// iPad mini 7th Generation WiFi
+        case iPad16_1 = "iPad16,1"
+        /// iPad mini 7th Generation Cellular
+        case iPad16_2 = "iPad16,2"
+        /// iPad Air 11inch M3 WiFi
+        case iPad15_3 = "iPad15,3"
+        /// iPad Air 11inch M3 Cellular
+        case iPad15_4 = "iPad15,4"
+        /// iPad Air 13inch M3 WiFi
+        case iPad15_5 = "iPad15,5"
+        /// iPad Air 13inch M3 Cellular
+        case iPad15_6 = "iPad15,6"
+        /// iPad 11th Generation WiFi
+        case iPad15_7 = "iPad15,7"
+        /// iPad 11th Generation Cellular
+        case iPad15_8 = "iPad15,8"
 
         /// device name
         func deviceName() -> String {
@@ -440,6 +464,14 @@ public class YMTGetDeviceName {
                 return "iPhone 16 Plus"
             case .iPhone17_5:
                 return "iPhone 16e"
+            case .iPhone18_3:
+                return "iPhone 17"
+            case .iPhone18_1:
+                return "iPhone 17 Pro"
+            case .iPhone18_2:
+                return "iPhone 17 Pro Max"
+            case .iPhone18_4:
+                return "iPhone 17 Air"
             case .iPad1_1:
                 return "iPad 1"
             case .iPad2_1, .iPad2_4:
@@ -580,6 +612,18 @@ public class YMTGetDeviceName {
                 return "iPad Pro 11 inch M4"
             case .iPad16_5, .iPad16_6:
                 return "iPad Pro 13 inch M4"
+            case .iPad16_1:
+                return "iPad mini 7th Generation WiFi"
+            case .iPad16_2:
+                return "iPad mini 7th Generation Cellular"
+            case .iPad15_3, .iPad15_4:
+                return "iPad Air 11 inch M3"
+            case .iPad15_5, .iPad15_6:
+                return "iPad Air 13 inch M3"
+            case .iPad15_7:
+                return "iPad 11th Generation WiFi"
+            case .iPad15_8:
+                return "iPad 11th Generation Cellular"
             }
         }
     }

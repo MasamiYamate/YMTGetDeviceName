@@ -14,5 +14,8 @@ let package = Package(
         .target(
             name: "YMTGetDeviceName",
             dependencies: []),
+        .testTarget(
+            name: "YMTGetDeviceNameTests",
+            dependencies: ["YMTGetDeviceName"]),
     ]
 )
